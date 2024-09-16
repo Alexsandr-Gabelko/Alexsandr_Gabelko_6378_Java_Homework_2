@@ -12,11 +12,11 @@ public class  Human extends Actor{
     public void setMakeOrder(boolean makeOrder) {  super.isMakeOrder = makeOrder;  }
 
     @Override
-    public void setTakeOrder(boolean takeOrder) {  super.isTakeOrder = isTakeOrder;  }
+    public void setTakeOrder(boolean takeOrder) {  super.isTakeOrder = takeOrder;  }
 
     @Override
-    public boolean isMakeOrder() {   return false;    }
+    public boolean isMakeOrder() {   return super.isMakeOrder;    }
 
     @Override
-    public boolean isTakeOrder() { return super.isMakeOrder; }
+    public boolean isTakeOrder() { return super.isTakeOrder; }
 }
